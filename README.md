@@ -1,16 +1,37 @@
-# US Population Data Web Page
+# **US Population Data Web Page**
 
-## Overview
-This project retrieves and displays US Population data from the Data USA API.
+## **Introduction**
+This project retrieves and displays US Population data using an API from Data USA.
 
-## Features
-- Fetches data dynamically from `https://datausa.io/api/data?drilldowns=Nation&measures=Population`
-- Displays data in a responsive HTML table
-- Sorted in descending order by year
-- Styled with basic CSS for readability
+---
 
-## Screenshots
-![US Population Table](screenshots/screenshot.png)
+## **What It Does**
+- Fetches US population data from `https://datausa.io/api/data?drilldowns=Nation&measures=Population`
+- Parses and sorts the data in descending order by year
+- Displays the data in a clean, responsive HTML table
 
-## How to Run
-1. Clone this repository:
+---
+
+## **Example Output**
+Upon loading the page, a table will display the population data:
+
+| Year | Population |
+|------|------------|
+| 2022 | 333,287,557 |
+| 2021 | 331,893,745 |
+| 2020 | 331,002,651 |
+| ...  | ... |
+
+---
+
+## **How It Works**
+1. The HTML page (`index.html`) loads and runs a JavaScript script.
+2. The script makes an API request to Data USA.
+3. The response is parsed, sorted, and dynamically inserted into an HTML table.
+4. The data updates in real time whenever the page loads.
+
+---
+
+## **How to Run**
+1. Open `index.html` in a browser.
+2. If using VS Code, install **Live Server** and click "Go Live" for automatic updates.
