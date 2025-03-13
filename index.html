@@ -47,7 +47,7 @@
                 const tableBody = document.querySelector("#populationTable tbody");
                 tableBody.innerHTML = "";
 
-                // Sort data by year in descending order
+                // Sort by year in descending order
                 data.data.sort((a, b) => b.Year - a.Year);
 
                 data.data.forEach(entry => {
